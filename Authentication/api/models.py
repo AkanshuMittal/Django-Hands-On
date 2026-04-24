@@ -5,7 +5,7 @@ class Student(models.Model):
     name = models.CharField(max_length=100)
     roll = models.IntegerField()
     city = models.CharField(max_length=100)
-    passby = models.CharField(max_length=50)
+    passby = models.CharField(max_length=50, default='unknown')
 
 
 # Generating the token with the help of signals
@@ -19,3 +19,4 @@ from rest_framework.authtoken.models import Token
 def create_auth_token(sender, instance=None, created=False, **kwargs):
     if created:
         Token.objects.create(user=instance)
+
