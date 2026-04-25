@@ -128,21 +128,6 @@ def student_api(request):
         # json_data = JSONRenderer().render(res)
         # return HttpResponse(json_data, content_type='application/json')
         return JsonResponse(res, safe=False)
-    
-
-
-
-
-
-
-
-
-    
-
-
-    
-    
-
 
 
 
