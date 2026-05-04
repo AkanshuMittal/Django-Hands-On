@@ -1,2 +1,6 @@
 httpie
 django-filter
+django
+djangorestframework
+## For JWT Authentication
+djangorestframework-simplejwt
